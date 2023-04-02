@@ -190,7 +190,7 @@
                 </section>
             </div>
         </section>
-        <section id="about" lass="about">
+        <section id="about" class="about">
             <div class="grid wide">
                 <section class="about-body half">
                     <figure class="about-block__img">
@@ -467,7 +467,8 @@
                         </div>
                         <form class="footer-form" action="/" method="POST">
                             <input class="footer-form__input" type="email" id="email" name="email"
-                                placeholder="Enter your name" required>
+                                placeholder="Enter your name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                required>
                             <input class="footer-form__btn btn" class="btn" type="submit" value="Submit">
                         </form>
                     </div>

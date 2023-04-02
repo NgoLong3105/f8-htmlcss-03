@@ -21,9 +21,6 @@ body {
     display: flex;
     align-items: center;
 }
-.logo-text {
-    line-height: 1;
-}
 .logo-desc {
     color: #fff;
     font-weight: 400;
@@ -433,7 +430,7 @@ body {
 
 /* cta */
 .cta {
-    margin-top: 265px;
+    padding-top: 265px;
 }
 .cta-body {
     position: relative;
