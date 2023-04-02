@@ -6,7 +6,7 @@ body {
     top: -30px;
     height: 82px;
     padding-top: 30px;
-    background: #10375c;
+    background: var(--main-color);
     z-index: 999;
 }
 .header-top {
@@ -82,7 +82,7 @@ body {
 
 /* hero */
 .hero {
-    background: #10375c;
+    background: var(--main-color);
 }
 .hero-block {
     padding: 76px 0 170px;
@@ -149,7 +149,7 @@ body {
 }
 .services-heading {
     font-size: 5rem;
-    color: #10375c;
+    color: var(--main-color);
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -202,7 +202,7 @@ body {
     height: 60px;
     margin: 0 22px;
     flex-shrink: 0;
-    color: #10375c;
+    color: var(--main-color);
     border-radius: 30px;
     background: #eff6fd;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
@@ -216,7 +216,7 @@ body {
     width: 351px;
 }
 .services-item__info-heading {
-    color: #10375c;
+    color: var(--main-color);
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 23px;
@@ -239,7 +239,7 @@ body {
 .works-text {
 }
 .works-heading {
-    color: #10375c;
+    color: var(--main-color);
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2;
@@ -273,10 +273,10 @@ body {
     border: 16px solid #2e80ce;
 }
 .works-item:hover .works-item__link {
-    color: #10375c;
+    color: var(--main-color);
 }
 .works-item__title {
-    color: #10375c;
+    color: var(--main-color);
     font-weight: 600;
     font-size: 2.6rem;
     margin-top: 20px;
@@ -295,7 +295,7 @@ body {
     padding: 8px 8px 8px 0;
 }
 .works-item__link:hover {
-    color: #10375c;
+    color: var(--main-color);
 }
 /* about  */
 .about {
@@ -333,7 +333,7 @@ body {
 }
 .about-heading {
     font-size: 5rem;
-    color: #10375c;
+    color: var(--main-color);
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -355,7 +355,7 @@ body {
 .member-heading {
     font-size: 5rem;
     line-height: 1.2;
-    color: #10375c;
+    color: var(--main-color);
     font-weight: 600;
     padding-bottom: 38px;
     letter-spacing: -0.02em;
@@ -394,7 +394,7 @@ body {
 }
 .member-name {
     font-weight: 400;
-    color: #10375c;
+    color: var(--main-color);
 }
 .member-title {
     color: #575f66;
@@ -488,21 +488,31 @@ body {
 .blog-heading {
     width: 470px;
     font-size: 5rem;
-    color: #10375c;
+    color: var(--main-color);
     font-weight: 600;
     line-height: 1.2;
+    padding-bottom: 20px;
     letter-spacing: -0.02em;
 }
 .blog-link {
-    color: #10375c;
+    position: relative;
+    color: var(--main-color);
     font-weight: 600;
     font-size: 1.8rem;
-    padding: 28px 0;
     line-height: 1.56;
     font-family: "Inter";
-    text-decoration-line: underline;
+    padding: 8px 8px 8px 0;
+}
+.blog-link::after {
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 90%;
+    border: 1px solid var(--main-color);
 }
 .blog-control {
+    padding-top: 20px;
     margin: 0;
     justify-content: start;
 }
@@ -526,7 +536,7 @@ body {
     padding: 18px 0 0 22px;
 }
 .blog-name {
-    color: #10375c;
+    color: var(--main-color);
     font-weight: 600;
     line-height: 1.62;
 }
@@ -549,7 +559,7 @@ body {
 }
 .appointment-heading {
     position: relative;
-    color: #10375c;
+    color: var(--main-color);
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2;
@@ -580,7 +590,7 @@ body {
 
 /* footer */
 .footer {
-    background: #10375c;
+    background: var(--main-color);
 }
 .footer-body {
     padding: 100px 0 28px;
