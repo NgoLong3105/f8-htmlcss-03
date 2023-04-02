@@ -7,7 +7,7 @@ body {
     height: 82px;
     padding-top: 30px;
     background: #10375c;
-    z-index: 10;
+    z-index: 999;
 }
 .header-top {
     display: flex;
@@ -20,7 +20,6 @@ body {
 .logo-group {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .logo-text {
     line-height: 1;
@@ -203,13 +202,15 @@ body {
     height: 60px;
     margin: 0 22px;
     flex-shrink: 0;
+    color: #10375c;
     border-radius: 30px;
     background: #eff6fd;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
 }
 .services-item:hover .services-item__img {
+    color: #fff;
     background: #2e80ce;
-    transition: background-color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .services-item__info {
     width: 351px;
@@ -547,12 +548,24 @@ body {
     background: #f7fbff;
 }
 .appointment-heading {
+    position: relative;
     color: #10375c;
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2;
-    font-family: "Sora";
+    font-family: "Sora", sans-serif;
     letter-spacing: -0.02em;
+}
+.appointment-heading::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    height: 2px;
+    width: 136px;
+    border-radius: 10px;
+    background: #2e80ce;
+    transform: translateX(-50%);
 }
 .appointment-desc {
     width: 617px;
@@ -562,7 +575,136 @@ body {
     color: #575f66;
     font-weight: 300;
     line-height: 1.75;
-    font-family: "Sora";
+    font-family: "Sora", sans-serif;
 }
-.appointment-btn {
+
+/* footer */
+.footer {
+    background: #10375c;
+}
+.footer-body {
+    padding: 100px 0 28px;
+}
+.footer__row {
+    display: grid;
+    grid-template-columns: 336px 134px 134px 332px;
+    column-gap: 78px;
+}
+.footer__colum {
+}
+.footer-desc {
+    color: #a9b3bb;
+    font-weight: 400;
+    line-height: 1.75;
+    padding-top: 21px;
+    font-family: "Open Sans";
+}
+.footer-info {
+}
+.footer-info + .footer-info {
+    margin-top: 28px;
+}
+.footer-heading {
+    font-weight: 600;
+    font-family: "Open Sans";
+}
+.footer-list {
+    margin-top: 20px;
+}
+.footer-item {
+}
+.footer-item + .footer-item {
+    margin-top: 10px;
+}
+.footer-link {
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    font-family: "Open Sans";
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+.footer-list__icon {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer-item__icon {
+    color: #fff;
+}
+.footer-item__icon + .footer-item__icon {
+    margin-left: 10px;
+}
+.footer-link__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #2e80ce;
+    background: #fff;
+    border-radius: 50%;
+}
+.footer-link__icon:hover {
+    background: #2e80ce;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+.footer__colum:last-child .footer-desc {
+    color: #a9b3bb;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    padding: 20px 0;
+    font-family: "Open Sans", sans-serif;
+}
+.footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    color: #9ca8b1;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    background: transparent;
+    font-family: "Open Sans";
+    border: 1px solid #406181;
+}
+.footer-form__btn {
+    width: 108px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 4px;
+}
+.footer-copyright {
+    position: relative;
+    text-align: center;
+    padding: 28px 0;
+}
+.footer-copyright::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 1px;
+    width: 1170px;
+    background: #406181;
+    transform: translateX(-50%);
+}
+.footer-copyright p {
+    color: #aab3ba;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    ont-family: "Open Sans";
 }
