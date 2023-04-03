@@ -25,6 +25,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
 :root {
     --while-color: #fff;
     --black-color: #000;
